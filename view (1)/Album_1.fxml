@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Authors: William Chen and Chijun Sha-->
+
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+
+   <children>
+   
+   
+
+
+   <HBox prefHeight="577.0" prefWidth="726.0">
+   <children>
+
+			<TabPane fx:id="tab" prefHeight="575.0" prefWidth="660.0">
+				<tabs>
+					<Tab text="Album">
+						<content>
+							  <ScrollPane prefHeight="575.0" prefWidth="660.0">
+								<content>
+											<TilePane fx:id="tile" prefHeight="575.0" prefWidth="660.0" style="-fx-background-color: azure;" />
+								</content>
+							  </ScrollPane>
+						</content>
+					</Tab>
+					<Tab text="Photo">
+						<content>
+									<Pagination fx:id="pagination" /> 
+						</content>
+					</Tab>
+				</tabs>
+			</TabPane>
+			  
+			  
+			</children>
+	</HBox>
+
+   </children>
+
+
+</VBox>
